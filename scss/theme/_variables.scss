@@ -1,0 +1,72 @@
+$c-black: #000000;
+$c-white: #ffffff;
+$c1-300: #116e32;
+$c1-100: #189a46;
+$c1-200: #189c04;
+$c2-300: #f53626;
+$c-text1: #696969;
+$c-text2: #000c04;
+$c-text3: #999999;
+$c-text4: #777777;
+:root {
+    --primary-color: #189a46;
+    --secondary-color: #f53626;
+    --font-color: #696969;
+    --bg-color: #ffffff;
+    --heading-color: #000c04;
+    --dropdown-color: #ffffff;
+    --nav-color: #292922;
+    --bg-light: rgba(147, 107, 232, 0.05);
+}
+.dark {
+    --primary-color: #189a46;
+    --secondary-color: #f53626;
+    --font-color: #afafaf;
+    --bg-color: #151515;
+    --heading-color: #ddd;
+    --dropdown-color: #151515;
+    --nav-color: #ffffff;
+    --bg-light: #222;
+}
+
+// ====== color by 'Hung' ===========
+$primary-color: #189a46;
+$secondary-color: #f53626;
+$font-color: #696969;
+$bg-color: #fff;
+$heading-color: #000c04;
+$border-color: #ddd;
+$border-light: #f0f3f0;
+$nav-color: #292922;
+$dropdown-color: #fff;
+$bg-light: rgba(147, 107, 232, 0.05);
+$widget-bg: #3f3a64;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #189a46;
+$secondary: #f53626;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// animation
+@keyframes shine {
+    100% {
+        left: 100%;
+    }
+}

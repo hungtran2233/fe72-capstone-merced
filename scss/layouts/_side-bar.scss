@@ -1,0 +1,68 @@
+.side-bar {
+  &-container {
+    width: 90px;
+    height: 100%;
+    position: fixed;
+    top: 41px;
+    right: 0;
+    z-index: 1000;
+    .side-bar-main {
+      display: flex;
+      padding: 0 5px 40px;
+      flex-direction: column;
+      padding-top: 90px;
+      background-color: #0d1326;
+      text-align: center;
+      border-radius: 0 0 0 10px;
+      &.disable {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      .bd {
+        border-top: 1px solid #41414d;
+        padding-top: 30px;
+      }
+      a {
+        text-decoration: none;
+        margin-bottom: 20px;
+        color: #e6ebff;
+        opacity: .6;
+        &:hover {
+            color: $c-white;
+            opacity: 1;
+        }
+        span {
+            display: block;
+            i {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+        
+      }
+    }
+    .scroll {
+        width: 100%;
+        .btn-scroll {
+            display: inline-block;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 150px;
+            margin-left: 20%;
+            border: 1px solid transparent;
+            background-color: $c1-100;
+            color: $c-white;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s;
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+  }
+}

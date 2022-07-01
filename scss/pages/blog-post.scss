@@ -1,0 +1,115 @@
+@import "../common/base";
+@import "../theme/variables";
+@import "../theme/mixin";
+@import "../layouts/footer";
+@import "../layouts/header";
+@import "../layouts/pull-right";
+@import "../layouts/side-bar";
+@import "../layouts/banner";
+
+.blog-post {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--bg-light);
+
+    .title {
+        text-align: center;
+
+        span {
+            @include text(18px, 400, $secondary);
+            text-transform: uppercase;
+            line-height: 2em;
+            letter-spacing: 1px;
+        }
+        h2 {
+            @include text(40px, 600, var(--heading-color));
+            line-height: 48px;
+            text-transform: capitalize;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .main {
+        .item {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.5s;
+            margin-bottom: 50px;
+
+            // hover effect
+            &:hover {
+                transform: translateY(-20px);
+
+                .item-body {
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
+                }
+            }
+
+            .item-header {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .item-body {
+                background-color: var(--bg-color);
+                padding: 30px 20px;
+                box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+                //hover
+
+                .description {
+                    @include text(26px, 600, var(--heading-color));
+                    text-transform: capitalize;
+                    line-height: 34px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1.2em;
+                    line-height: 28px;
+                    color: $font-color;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .author {
+                    margin-top: 1rem;
+                    margin-bottom: 0.25rem;
+                    a {
+                        @include text(18px, 400, var(--heading-color));
+                        text-decoration: none;
+                        line-height: 28px;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+
+                    span {
+                        color: #999;
+                    }
+                }
+
+                .blog-meta {
+                    padding: 0;
+                    li {
+                        color: #999;
+                        display: inline-block;
+                        margin-right: 20px;
+
+                        span {
+                            color: #999;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

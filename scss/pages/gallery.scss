@@ -1,0 +1,67 @@
+@import "../common/base";
+@import "../theme/variables";
+@import "../theme/mixin";
+@import "../layouts/footer";
+@import "../layouts/header";
+@import "../layouts/pull-right";
+@import "../layouts/side-bar";
+@import "../layouts/banner";
+
+.gallery-list {
+    padding-top: 3rem;
+    background-color: var(--bg-color);
+    .title {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        .container {
+            text-align: center;
+            span {
+                @include text(18px, 400, $secondary);
+                text-transform: uppercase;
+                line-height: 2em;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                @include text(40px, 600, var(--heading-color));
+                line-height: 48px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .main {
+        .item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 24px;
+
+            //hover effect
+            &::before {
+                content: "";
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: -100%;
+                display: block;
+                background: linear-gradient(
+                    to right,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.3) 100%
+                );
+                transform: skewX(-25deg);
+            }
+
+            &:hover::before {
+                animation: shine 0.75s;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

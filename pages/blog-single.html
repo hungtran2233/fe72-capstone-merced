@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog Single</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        />
+        <link rel="stylesheet" href="../css/blog-single.css" />
+    </head>
+    <body>
+        <!-- toolbar right  -->
+        <div class="setup" onclick="toggle()"></div>
+        <div class="pull-right">
+            <button class="fa-solid fa-angles-right btn-side-bar"></button>
+        </div>
+        <div class="side-bar">
+            <div class="side-bar-container">
+                <div class="side-bar-main animate__animated animate__fadeInRight">
+                    <a href="" class="bd">
+                        <span><i class="fa-solid fa-arrow-left"></i></span>
+                        <span>Back</span>
+                    </a>
+                    <a href="">
+                        <span><i class="fa-solid fa-download"></i></span>
+                        <span> Download</span>
+                    </a>
+                    <a href="">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span>Buy</span>
+                    </a>
+                </div>
+                <div class="scroll">
+                    <button class="btn-scroll">
+                        <i class="fa-solid fa-arrow-turn-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <header class="header fix-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">pooch care</a>
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="fa-solid fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../home.html">Home</a>
+                            <a class="nav-link" href="../pages/about.html">About</a>
+                            <a class="nav-link" href="../pages/services.html">Services</a>
+                            <a class="nav-link" href="../pages/gallery.html">Gallery</a>
+                            <div class="dropdown">
+                                <a
+                                    class="dropdown-nav active"
+                                    href="#"
+                                    role="button"
+                                    id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Blogs
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/blog-post.html"
+                                            >Blog post</a
+                                        >
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-link" href="../pages/contact.html">Contact</a>
+                        </div>
+                    </div>
+
+                    <button
+                        class="themes fa-solid fa-moon"
+                        onclick="changeThemes(), changeIcon(this)"
+                    ></button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <div class="background">
+                <div class="container">
+                    <h2>Blog Single</h2>
+                    <div>
+                        <a href="../home.html">Home</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>Blog Single</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-1">
+            <header class="title">
+                <div class="container">
+                    <div class="header-box">
+                        <p>Pooch Care</p>
+                        <h2>It Is A Long Established Fact A Reader Be Distracted</h2>
+                        <ul>
+                            <li><i class="fa fa-clock"></i> May 24 2020</li>
+                            <li><i class="fa fa-user"></i> May 24 2020</li>
+                            <li><i class="fa fa-heart"></i> May 24 2020</li>
+                            <li><i class="fa fa-comments"></i> May 24 2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="container">
+                    <div class="bg-main">
+                        <img src="../img/banner4.jpg" alt="" />
+                    </div>
+
+                    <div class="text-main">
+                        <p>
+                            It is a long established fact that a reader will be distracted by the
+                            readable content of a page when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, as opposed to using 'Content here, content here', making it
+                            look like readable English. Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Repellat, hic reprehenderit eum cupiditate deleniti
+                            asperiores illum ad tenetur aliquam culpa fugit odit consequatur. Rerum
+                            illo accusantium aliquid quae adipisci fugiat sapiente delectus unde
+                            architecto. Tempore saepe maxime illo laborum obcaecati.
+                        </p>
+                        <div class="row single-post-content">
+                            <div class="col-md-4 col-lg-4 col-sm-12">
+                                <img src="../img/gallery/g1.jpg" alt="" />
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-sm-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim
+                                aut sequi. Dignissimos repudiandae libero quam, eveniet quos
+                                praesentium aliquid, saepe asperiores iusto architecto reiciendis
+                                eum rem cupiditate possimus tempore mollitia. Veniam similique
+                                beatae unde nihil esse explicabo odio laborum quibusdam non, harum
+                                suscipit velit odit cumque animi porro quo.
+                            </div>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos
+                            neque repudiandae suscipit rem ea facilis repellat ab vero odit ducimus
+                            praesentium, nobis quo temporibus assumenda itaque ad soluta ipsam,
+                            porro accusantium quaerat iure reiciendis autem! Et sequi culpa impedit
+                            eligendi iure earum! Minima, ratione odit in eos explicabo dolor.
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <section class="quote-1">
+            <div class="container">
+                <blockquote class="blockquote mb-md-5 mb-3">
+                    <q class="mb-3 d-block"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos
+                        facere dolor repellendus odio. Voluptatum provident quasi necessitatibus
+                        laboriosam alias.
+                    </q>
+                    <footer class="blockquote-footer">Alexander smith</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="content-2">
+            <div class="container">
+                <div class="main-content">
+                    <h4>
+                        <a href="">It is a long established fact a reader be distracted.</a>
+                    </h4>
+                    <h5>
+                        It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at its layout. The point of using
+                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here, content here', making it look like readable
+                        English.
+                    </h5>
+                    <p class="sub-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos
+                        facere dolor repellendus odio. Voluptatum provident quasi necessitatibus
+                        laboriosam alias dicta quis voluptate minus minima dolorum quod, quaerat
+                        modi veritatis libero! Culpa facilis enim optio veniam voluptas. Laudantium
+                        explicabo optio quam ea deleniti odio totam adipisci illo, enim quos
+                        corrupti. Animi labore natus at quas laborum. Soluta, nam molestiae.
+                    </p>
+                    <p class="sub-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tenetur
+                        amet. Quibusdam nemo aut ut non aliquam nam est quae aspernatur repellendus
+                        illo id earum ipsa debitis saepe maiores quasi voluptate, sunt reiciendis
+                        voluptatibus veniam pariatur? Tempore laudantium libero adipisci.
+                    </p>
+
+                    <div class="row single-post-content-1">
+                        <div class="col-md-4 col-lg-4 col-sm-12">
+                            <img src="../img/gallery/g2.jpg" alt="" />
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim aut
+                            sequi. Dignissimos repudiandae libero quam, eveniet quos praesentium
+                            aliquid, saepe asperiores iusto architecto reiciendis eum rem cupiditate
+                            possimus tempore mollitia. Veniam similique beatae unde nihil esse
+                            explicabo odio laborum quibusdam non, harum suscipit velit odit cumque
+                            animi porro quo.
+                        </div>
+                    </div>
+
+                    <div class="row single-post-content-2">
+                        <div class="col-md-8 col-lg-8 col-sm-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim aut
+                            sequi. Dignissimos repudiandae libero quam, eveniet quos praesentium
+                            aliquid, saepe asperiores iusto architecto reiciendis eum rem cupiditate
+                            possimus tempore mollitia. Veniam similique beatae unde nihil esse
+                            explicabo odio laborum quibusdam non, harum suscipit velit odit cumque
+                            animi porro quo.
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12">
+                            <img src="../img/gallery/g3.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><h4 class="m-0 mr-md-4 mr-2">Share this post :</h4></li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f face-icon"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter twi-icon"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram ins-icon"></i></a>
+                        </li>
+                    </ul>
+
+                    <nav class="post-navigation row">
+                        <div class="post-prev col-md-6 col-sm-12">
+                            <span class="nav-title">
+                                <i class="fa fa-angle-double-left"></i>Prev Post
+                            </span>
+                            <a href="" class="post-view-left">
+                                <img src="../img/gallery/g9.jpg" alt="" />
+                                <label>Lorem ipsum dolor sit amet</label>
+                            </a>
+                        </div>
+
+                        <div class="post-next col-md-6 col-sm-12">
+                            <span class="nav-title">
+                                Prev Post<i class="fa fa-angle-double-right"></i>
+                            </span>
+                            <a href="" class="post-view-right">
+                                <label>Lorem ipsum dolor sit amet</label>
+                                <img src="../img/gallery/g9.jpg" alt="" />
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-comment">
+            <div class="container">
+                <div class="comment-content">
+                    <h3>Recent Comments</h3>
+                    <div class="person">
+                        <div class="img-circle">
+                            <img src="../img/blog/blog-single/f1.jpg" alt="" />
+                        </div>
+                        <div class="body">
+                            <h5 class="mt-0">Alisa larden</h5>
+                            <span class="time">18 minutes ago</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                officiis rerum assumenda facere maxime accusamus cum. Numquam harum
+                                vitae id. Nemo qui fugiat nam quasi?
+                            </p>
+                            <a href="#reply-form" class="reply">Reply</a>
+
+                            <div class="reply-person">
+                                <div class="img-circle">
+                                    <img src="../img/blog/blog-single/f2.jpg" alt="" />
+                                </div>
+                                <div class="body">
+                                    <h5 class="mt-0">Alisa larden</h5>
+                                    <span class="time">18 minutes ago</span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Laborum, officiis rerum assumenda facere maxime accusamus
+                                        cum. Numquam harum vitae id. Nemo qui fugiat nam quasi?
+                                    </p>
+                                    <a href="#reply-form" class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="person">
+                        <div class="img-circle">
+                            <img src="../img/blog/blog-single/f3.jpg" alt="" />
+                        </div>
+                        <div class="body">
+                            <h5 class="mt-0">Alisa larden</h5>
+                            <span class="time">18 minutes ago</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                officiis rerum assumenda facere maxime accusamus cum. Numquam harum
+                                vitae id. Nemo qui fugiat nam quasi?
+                            </p>
+                            <a href="#reply-form" class="reply">Reply</a>
+                        </div>
+                    </div>
+
+                    <div class="person">
+                        <div class="img-circle">
+                            <img src="../img/blog/blog-single/f4.jpg" alt="" />
+                        </div>
+                        <div class="body">
+                            <h5 class="mt-0">Alisa larden</h5>
+                            <span class="time">18 minutes ago</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                officiis rerum assumenda facere maxime accusamus cum. Numquam harum
+                                vitae id. Nemo qui fugiat nam quasi?
+                            </p>
+                            <a href="#reply-form" class="reply">Reply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-post">
+            <div class="container">
+                <div class="horizontal-align">
+                    <div class="title">
+                        <h2>Related posts</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="item">
+                                <div class="item-header">
+                                    <img src="../img/gallery/g5.jpg" alt="" />
+                                </div>
+                                <div class="item-body">
+                                    <a href="" class="description">Lorem ipsum dolor sit amet</a>
+                                    <p>
+                                        Lorem, ipsum dolor sit adipisicing elit. Reprehenderit,
+                                        magnam?
+                                    </p>
+                                    <div class="author">
+                                        <a href="">Johnson Smith </a>-
+                                        <span class="date">May 23, 2020</span>
+                                    </div>
+                                    <ul class="blog-meta">
+                                        <li class="comment-item">
+                                            <span class="fa fa-comment"></span> 30 comments
+                                        </li>
+                                        <li class="view-item">
+                                            <span class="fa fa-eye"></span> 30 views
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="item">
+                                <div class="item-header">
+                                    <img src="../img/gallery/g6.jpg" alt="" />
+                                </div>
+                                <div class="item-body">
+                                    <a href="" class="description">Lorem ipsum dolor sit amet</a>
+                                    <p>
+                                        Lorem, ipsum dolor sit adipisicing elit. Reprehenderit,
+                                        magnam?
+                                    </p>
+                                    <div class="author">
+                                        <a href="">Johnson Smith </a>-
+                                        <span class="date">May 23, 2020</span>
+                                    </div>
+                                    <ul class="blog-meta">
+                                        <li class="comment-item">
+                                            <span class="fa fa-comment"></span> 30 comments
+                                        </li>
+                                        <li class="view-item">
+                                            <span class="fa fa-eye"></span> 30 views
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <header class="title">
+                <div class="container">
+                    <h2>Leave a reply</h2>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="">
+                                <div class="field-1">
+                                    <div class="mb-3">
+                                        <input
+                                            type="text"
+                                            class="form-input"
+                                            id="exampleFormControlInput1"
+                                            placeholder="Your Name*"
+                                        />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input
+                                            type="email"
+                                            class="form-input"
+                                            id="exampleFormControlInput2"
+                                            placeholder="Email Address*"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="field-1">
+                                    <div class="mb-3">
+                                        <input
+                                            type="text"
+                                            class="form-input"
+                                            id="exampleFormControlInput1"
+                                            placeholder="Subject"
+                                        />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input
+                                            type="email"
+                                            class="form-input"
+                                            id="exampleFormControlInput2"
+                                            placeholder="Phone"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <textarea
+                                        class="form-input"
+                                        id="exampleFormControlTextarea1"
+                                        rows="3"
+                                        placeholder="Your Message*"
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-style btn-success mt-4">
+                                    Add Comment
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-6 col-sm-12 col-md-5">
+                        <span class="title"> Contact infomation </span>
+                        <ul>
+                            <li>
+                                <strong>Address</strong> : #135 block, Barnard St. Brooklyn, London
+                                10036, UK
+                            </li>
+                            <li>
+                                <strong>Phone</strong>:
+                                <a href="tel:+122341124">+(12)234-11-24</a>
+                            </li>
+                            <li>
+                                <strong>Email</strong>:
+                                <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            </li>
+                            <li class="social-media">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                <a href=""><i class="fa-brands fa-google"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-7">
+                        <div class="row">
+                            <div class="col-xl-4 col-sm-4">
+                                <span class="title"> Company </span>
+                                <ul>
+                                    <li><a href="">About us</a></li>
+                                    <li><a href="">Blog Posts</a></li>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">Pricing</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-4 col-sm-4">
+                                <span class="title"> Quick Links </span>
+                                <ul>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Create Account</a></li>
+                                    <li><a href="">Care Center</a></li>
+                                    <li><a href="">Site Feedack</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-4 col-sm-4">
+                                <span class="title"> Support </span>
+                                <ul>
+                                    <li><a href="">All dogs</a></li>
+                                    <li><a href="">Care Advices</a></li>
+                                    <li><a href="">Care Support</a></li>
+                                    <li><a href="">Veterinary Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>
+                    © 2020 Pooch Care. All Rights Reserved. Design by
+                    <a href="">W3Layouts</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Javascript  -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="../js/main.js"></script>
+    </body>
+</html>
